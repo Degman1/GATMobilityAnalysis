@@ -104,9 +104,6 @@ def MAE(v, v_):
     return torch.mean(torch.abs(v_ - v))
 
 
-import numpy as np
-
-
 def evaluate_anomalies_with_prediction_tolerance(y_true, y_pred, window=1):
     """
     Evaluate anomaly detection performance by checking if each predicted anomaly
